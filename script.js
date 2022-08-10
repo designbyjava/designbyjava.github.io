@@ -32,11 +32,6 @@ function WhatsApp() {
         alert('Silahkan tulis ' + ph);
         $('#whatsapp .servis').focus();
         return false;
-    } else if ($('#whatsapp .qty').val() == '') { // Cek Qty
-        ph = $('#whatsapp .qty').attr('placeholder');
-        alert('Silahkan tulis ' + ph);
-        $('#whatsapp .qty').focus();
-        return false;
     } else {
         // Check Device (Mobile/Desktop)
         var url_wa = 'https://web.whatsapp.com/send';
@@ -49,9 +44,9 @@ function WhatsApp() {
             nama = $('#whatsapp .nama').val(),
             nowhatsapp = $('#whatsapp .nowhatsapp').val(),
             alamat = $('#whatsapp .alamat').val(),
-            servis = $('#whatsapp .servis').val(),
-            qty = $('#whatsapp .qty').val();
-        $(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Halo admin JAVA saya membutuhkan pelayanan anda, Perkenalkan.' + '%0A%0ANama : *' + nama + '* %0ANo. Whatsapp : *' + nowhatsapp + '* %0AAlamat : *' + alamat + '* %0ANama Servis : *' + servis + '* %0A%0ATerimakasih.');
+            servis = $('#whatsapp .servis').val();
+        $(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Hi JAVA, %0ASaya membutuhkan pelayanan *' + servis + '* anda. %0APerkenalkan:' + '%0A%0ANama : *' + nama + '* %0ANo. Whatsapp : *' + nowhatsapp + '* %0AAlamat : *' + alamat + '* %0ANama Servis : *' + servis + '* %0A%0ATerimakasih.');
+        //$(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Halo admin JAVA saya membutuhkan pelayanan anda, Perkenalkan.' + '%0A%0ANama : *' + nama + '* %0ANo. Whatsapp : *' + nowhatsapp + '* %0AAlamat : *' + alamat + '* %0ANama Servis : *' + servis + '* %0A%0ATerimakasih.');
         // $(this).attr('href', url_wa + '?phone=62 ' + tujuan + '&text=Nama: ' + nama + ' %0ANo. Whatsapp: ' + nowhatsapp + '%0AAlamat: ' + alamat + ' %0A%0Avia ' + via_url);
         var w = 960,
             h = 540,

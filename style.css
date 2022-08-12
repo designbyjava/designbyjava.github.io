@@ -178,7 +178,7 @@ iframe {
 
 .wrap-contact100 {
     width: 500px;
-    background: #0D1117;
+    background: #10141E;
     border-radius: 10px;
     overflow: hidden;
     padding: 42px 55px 45px 55px;
@@ -206,7 +206,7 @@ iframe {
 .wrap-input100 {
     width: 100%;
     position: relative;
-    border-bottom: 2px solid #d9d9d9;
+    border-bottom: 2px solid #a03ff0;
     padding-bottom: 13px;
     margin-bottom: 27px;
 }

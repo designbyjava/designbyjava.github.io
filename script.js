@@ -1,5 +1,5 @@
 //no wa admin
-$("#noAdmin").val("081219958307");
+$("#noAdmin").val("085198963919");
 $('.whatsapp-btn').click(function () {
     $('#whatsapp').toggleClass('toggle');
 });
